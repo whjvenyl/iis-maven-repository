@@ -1,0 +1,39 @@
+apply plugin: 'maven'
+
+group = "com.dynamsoft"
+version = "1.0"
+
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                repository(url: 'file:\\\\DESKTOP-3PCHU10\\site\\')
+
+                pom.project {
+                    name 'dcs'
+                    packaging 'aar'
+                    description 'Document scanning API for Android'
+                    url 'https://www.dynamsoft.com/Products/mobile-imaging-sdk.aspx'
+
+                    developers {
+                        developer {
+                            id 'Dynamsoft'
+                            name 'Dynamsoft'
+                            email 'support@dynamsoft.com'
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
+    }
+}
