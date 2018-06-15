@@ -4,9 +4,11 @@ Upload Android AAR file to a local **Maven repository** and host the Maven repos
 ## How to Use
 ### Maven repository
 Create an empty folder and share it local network.
+
 ![shared folder](http://www.codepool.biz/wp-content/uploads/2018/06/shared-folder.PNG)
 
 Edit the security and add **Everyone**.
+
 ![permission for shared folder](http://www.codepool.biz/wp-content/uploads/2018/06/iis-shared-everyone.PNG)
 
 Import **library** to **Android Studio**.
