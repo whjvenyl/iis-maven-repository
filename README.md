@@ -55,3 +55,7 @@ dependencies {
 ```
 
 Build and run the app.
+
+
+## Blog
+* [How to Host Maven Repository for Android AAR File on IIS](https://www.codepool.biz/host-maven-repository-android-aar-iis.html)
